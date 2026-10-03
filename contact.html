@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vanguard Architecture | Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1, h2, h3, h4, h5, h6 {font-family: "Segoe UI", Arial, sans-serif;}
+  .w3-bar-item { font-weight: 600; letter-spacing: 2px; }
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>VANGUARD</b> ARCHITECTS</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="services.html" class="w3-bar-item w3-button">Services</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-text-teal">Contact</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<div id="smallNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="margin-top:60px">
+  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="about.html" class="w3-bar-item w3-button">About</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-text-teal">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1564px;margin-top:80px">
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Us</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    
+    <div class="w3-row-padding" style="margin:32px -16px">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding">
+          <p><i class="fa fa-map-marker fa-fw w3-text-teal w3-xlarge w3-margin-right"></i> Vytenio g. 9 , Vilnius, Lithuania</p>
+          <p><i class="fa fa-phone fa-fw w3-text-teal w3-xlarge w3-margin-right"></i> Phone: +370 621 676 88</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-teal w3-xlarge w3-margin-right"></i> Email: patrickchibuzor.amarakuo@vvk.lt</p>
+          
+          <form action="javascript:void(0);" onsubmit="alert('Thank you! Your message has been sent successfully.');" class="w3-margin-top">
+            <div class="w3-section">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-section">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+            <div class="w3-section">
+              <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+            </div>
+            <div class="w3-section">
+              <input class="w3-input w3-border" type="text" placeholder="Comment / Message" required name="Comment">
+            </div>
+            <button type="submit" class="w3-button w3-black w3-block">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="w3-half">
+        <div class="w3-card w3-white w3-padding" style="height:100%; min-height:410px;">
+          <h4 class="w3-text-teal">Our Headquarters Office</h4>
+          <p class="w3-text-grey">Visit our studio to inspect physical models, consult our chief blueprint designers, and explore sustainable building materials firsthand.</p>
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80" alt="Office Location" style="width:100%; margin-top:15px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" style="margin-top:40px">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Patrick</a> | &copy; 2026 Vanguard Architects</p>
+</footer>
+
+<script>
+function toggleNav() {
+  var x = document.getElementById("smallNav");
+  if (x.className.indexOf("w3-hide") == -1) {
+    x.className += " w3-hide";
+  } else {
+    x.className = x.className.replace(" w3-hide", "");
+  }
+}
+</script>
+
+</body>
+</html>

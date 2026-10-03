@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vanguard Architecture | About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1, h2, h3, h4, h5, h6 {font-family: "Segoe UI", Arial, sans-serif;}
+  .w3-bar-item { font-weight: 600; letter-spacing: 2px; }
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>VANGUARD</b> ARCHITECTS</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-text-teal">About</a>
+      <a href="services.html" class="w3-bar-item w3-button">Services</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<div id="smallNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="margin-top:60px">
+  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-text-teal">About</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1564px;margin-top:80px">
+
+  <!-- About Header -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us</h3>
+    <p>Vanguard Architects is a multi-disciplinary architectural firm specializing in modern sustainable design, urban planning, and high-end residential spaces. Founded with a vision to integrate architecture seamlessly with nature, our work balances aesthetic brilliance with strict environmental stewardship.</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 s12 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="John Doe" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Ph.D. in Sustainable Design with over 25 years of global architectural leadership.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='contact.html'">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 s12 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Jane Smith" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Smith</h3>
+          <p class="w3-opacity">Principal Architect</p>
+          <p>Specializes in minimalist commercial structures and avant-garde glass facades.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='contact.html'">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 s12 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Mike Johnson" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Johnson</h3>
+          <p class="w3-opacity">Senior Designer</p>
+          <p>Expert in interior layout optimization, lighting, and eco-friendly raw material selection.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='contact.html'">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 s12 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Emily Davis" style="width:100%">
+        <div class="w3-container">
+          <h3>Emily Davis</h3>
+          <p class="w3-opacity">Landscape Architect</p>
+          <p>Bridges the outdoor ecology with structural indoor elements for organic living harmony.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='contact.html'">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" style="margin-top:40px">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Patrick</a> | &copy; 2026 Vanguard Architects</p>
+</footer>
+
+<script>
+function toggleNav() {
+  var x = document.getElementById("smallNav");
+  if (x.className.indexOf("w3-hide") == -1) {
+    x.className += " w3-hide";
+  } else {
+    x.className = x.className.replace(" w3-hide", "");
+  }
+}
+</script>
+
+</body>
+</html>

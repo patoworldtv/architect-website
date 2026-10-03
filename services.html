@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vanguard Architecture | Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1, h2, h3, h4, h5, h6 {font-family: "Segoe UI", Arial, sans-serif;}
+  .w3-bar-item { font-weight: 600; letter-spacing: 2px; }
+  .pricing-card { transition: 0.3s; }
+  .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>VANGUARD</b> ARCHITECTS</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="services.html" class="w3-bar-item w3-button w3-text-teal">Services</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<div id="smallNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="margin-top:60px">
+  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="about.html" class="w3-bar-item w3-button">About</a>
+  <a href="services.html" class="w3-bar-item w3-button w3-text-teal">Services</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1564px;margin-top:80px">
+
+  <!-- Services Header -->
+  <div class="w3-container w3-padding-32" id="services">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Our Services & Pricing</h3>
+    <p>We provide comprehensive design and engineering services catered to your unique project demands, ranging from conceptual design blueprints to full construction management.</p>
+  </div>
+
+  <!-- Services Grid -->
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 s12 w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-center pricing-card">
+        <header class="w3-teal w3-padding-24">
+          <h3>Architectural Design</h3>
+        </header>
+        <div class="w3-container w3-padding-16">
+          <p><b>Initial Blueprints</b></p>
+          <p><b>3D Modeling & Rendering</b></p>
+          <p><b>Zoning & Compliance</b></p>
+          <p><b>Structural Planning</b></p>
+          <h2 class="w3-text-teal">$2,500 <span class="w3-small w3-text-grey">/ starting</span></h2>
+        </div>
+        <div class="w3-container w3-padding-16">
+          <a href="contact.html" class="w3-button w3-black w3-block">Inquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 s12 w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-center pricing-card">
+        <header class="w3-black w3-padding-24">
+          <h3>Interior Styling</h3>
+        </header>
+        <div class="w3-container w3-padding-16">
+          <p><b>Space Optimization</b></p>
+          <p><b>Material & Color Consult</b></p>
+          <p><b>Custom Furniture Design</b></p>
+          <p><b>Lighting Architecture</b></p>
+          <h2 class="w3-text-teal">$1,800 <span class="w3-small w3-text-grey">/ starting</span></h2>
+        </div>
+        <div class="w3-container w3-padding-16">
+          <a href="contact.html" class="w3-button w3-teal w3-block">Inquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m12 s12 w3-margin-bottom">
+      <div class="w3-card-4 w3-white w3-center pricing-card">
+        <header class="w3-teal w3-padding-24">
+          <h3>Urban & Landscape</h3>
+        </header>
+        <div class="w3-container w3-padding-16">
+          <p><b>Master Planning</b></p>
+          <p><b>Eco-Integration</b></p>
+          <p><b>Garden & Hardscape</b></p>
+          <p><b>Full Project Oversight</b></p>
+          <h2 class="w3-text-teal">$4,000 <span class="w3-small w3-text-grey">/ starting</span></h2>
+        </div>
+        <div class="w3-container w3-padding-16">
+          <a href="contact.html" class="w3-button w3-black w3-block">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" style="margin-top:40px">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Patrick</a> | &copy; 2026 Vanguard Architects</p>
+</footer>
+
+<script>
+function toggleNav() {
+  var x = document.getElementById("smallNav");
+  if (x.className.indexOf("w3-hide") == -1) {
+    x.className += " w3-hide";
+  } else {
+    x.className = x.className.replace(" w3-hide", "");
+  }
+}
+</script>
+
+</body>
+</html>
